@@ -55,12 +55,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="form-group">
                 <label for="username">Nom d'utilisateur</label>
                 <input type="text" id="username" name="username"
-                       placeholder="admin" autofocus required>
+                       autofocus required>
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password"
-                       placeholder="••••••••" required>
+                       required>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;padding:11px 0;font-size:15px;">
                 Se connecter

@@ -49,7 +49,7 @@ require_once __DIR__ . '/../includes/header.php';
                    value="<?= htmlspecialchars($_POST['numero'] ?? '') ?>">
         </div>
         <div class="form-group">
-            <label for="prix">Prix par nuit (DH)</label>
+            <label for="prix">Prix par nuit (MRU)</label>
             <input type="number" id="prix" name="prix"
                    step="0.01" min="1" placeholder="Ex : 500"
                    value="<?= htmlspecialchars($_POST['prix'] ?? '') ?>">

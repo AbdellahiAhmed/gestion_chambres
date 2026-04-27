@@ -79,7 +79,7 @@ require_once __DIR__ . '/../includes/header.php';
                     $selected = (intval($_POST['chambre_id'] ?? $chambre_preselect) === $ch['id']) ? 'selected' : '';
                 ?>
                 <option value="<?= $ch['id'] ?>" <?= $selected ?>>
-                    Chambre <?= htmlspecialchars($ch['numero']) ?> — <?= number_format($ch['prix'], 2) ?> DH/nuit
+                    Chambre <?= htmlspecialchars($ch['numero']) ?> — <?= number_format($ch['prix'], 2) ?> MRU/nuit
                 </option>
                 <?php endwhile; ?>
             </select>

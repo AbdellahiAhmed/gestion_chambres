@@ -25,7 +25,7 @@ require_once __DIR__ . '/../includes/header.php';
         <thead>
             <tr>
                 <th>Numéro</th>
-                <th>Prix (DH / nuit)</th>
+                <th>Prix (MRU / nuit)</th>
                 <th>Statut</th>
                 <th>Actions</th>
             </tr>
@@ -41,7 +41,7 @@ require_once __DIR__ . '/../includes/header.php';
             <?php while ($ch = $chambres->fetch_assoc()): ?>
             <tr>
                 <td><strong>Chambre <?= htmlspecialchars($ch['numero']) ?></strong></td>
-                <td><?= number_format($ch['prix'], 2) ?> DH</td>
+                <td><?= number_format($ch['prix'], 2) ?> MRU</td>
                 <td>
                     <span class="badge badge-<?= $ch['statut'] ?>">
                         <?= $ch['statut'] === 'disponible' ? 'Disponible' : 'Occupée' ?>
